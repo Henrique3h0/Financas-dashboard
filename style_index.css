@@ -1,0 +1,126 @@
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.myChart {
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 3s forwards;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 1s forwards;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 1.5s forwards;
+}
+
+table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 2s forwards;
+}
+
+form {
+  margin-bottom: 20px;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 2.5s forwards;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 2.7s forwards;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 2.9s forwards;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  animation: slide-in 3.3s forwards;
+}
+
+/* Aplicando a classe dark-mode ao body */
+.dark-mode {
+  font-family: Arial;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Aplicando a classe dark-mode às células da tabela */
+.dark-mode table td,
+.dark-mode table th {
+  border: 1px solid #000000;
+  padding: 8px;
+  background-color: #222;
+  color: #ffffff;
+}
+
+/* Aplicando a classe dark-mode ao cabeçalho da tabela */
+.dark-mode table th {
+  background-color: #222;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Aplicando a classe dark-mode ao input de submit */
+.dark-mode form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
